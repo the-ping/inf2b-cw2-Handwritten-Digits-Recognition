@@ -15,6 +15,10 @@ function [C, idx, SSE] = my_kMeansClustering(X, k, initialCentres, maxIter)
     maxIter = 500;
   end
   
+  if nargin < 3
+      
+  end
+  
   %% TO-DO
 N = size(X,1);
 D = zeros(k, N); %kxN matrix store distances between centres and obsv.
@@ -42,8 +46,13 @@ for i = 1 : maxIter
         if (sum(idx==c) ==0)
             warning('k-means: cluster %d is empty', c);
         else
-            initialCentres(c, :) = myMean( X(idx==c,:));
-            C = initialCentres;
+            if k == 1
+                C = mean(X);
+            else
+                initialCentres(c, :) = myMean( X(idx==c,:));
+                C = initialCentres;
+            end
+          
         end
      end
   

@@ -5,7 +5,7 @@ function task1_5(X, Ks)
 %  X  : M-by-D data matrix (double)
 %  Ks : 1-by-L vector (integer) of the numbers of nearest neighbours
 
-elapsedTime = zeros(length(Ks),1); %array store runtimes for each k
+% elapsedTime = zeros(length(Ks),1); %array store runtimes for each k
 Legend=cell(length(Ks),1); %store legends for each k
 for i = 1:length(Ks)
 tic
@@ -27,8 +27,8 @@ tic
     save(f2,'idx');
     save(f3,'SSE');
 toc
-elapsedTime(i) = toc;   
-txt = sprintf('k = %d, runtime = %d',i,elapsedTime(i));
+elapsedTime = toc;   
+txt = sprintf('k = %d, runtime = %.5f sec',i,elapsedTime);
 Legend{i} = (txt);
 
 end
