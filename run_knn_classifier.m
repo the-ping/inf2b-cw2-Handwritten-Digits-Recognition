@@ -13,7 +13,7 @@ d = sqrdist(Xtest, Xtrain); %size: 3985 x 42024
 
     for k=1:length(Ks)
         knn = Ks(1,k);
-        [sortedd, idx] = sort(d, 1);
+        [sortedd, idx] = sort(d, 2);
         newidx = idx(:,1:knn);
         class = Ytrain(newidx);
         %loop over Ypreds?
