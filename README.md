@@ -1,2 +1,8 @@
 # inf2b-cw2
-unfinished coursework on Handwritten Digits Recognition. Have to state up to which step I stopped at. Reflect what sections still unsure of?
+**Course:**
+Informatics 2B: Algorithms, Data Structures and Learning
+
+**Objective:** 
+Implemented a system that recognises handwritten digits, using different methods of clustering, pattern recognition and PCA.
+
+**Language:** Matlab
