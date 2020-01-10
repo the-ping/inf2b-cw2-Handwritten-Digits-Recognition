@@ -1,4 +1,4 @@
-# inf2b-cw2
+# inf2b-cw2-Handwritten-Digits-Recognition
 **Course:**
 Informatics 2B: Algorithms, Data Structures and Learning
 
