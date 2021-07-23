@@ -13,6 +13,6 @@ Implemented a system that recognises handwritten digits, using different methods
 Instructions
 - instructions.pdf
 
-Answers
+Results
 - report_task1.pdf
 - report_task2.pdf
